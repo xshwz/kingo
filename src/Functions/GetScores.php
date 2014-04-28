@@ -20,10 +20,11 @@ class Kingo_GetScores extends Kingo_Functions {
   }
 
   /**
-   * @param DOMElement $dom
+   * @param DOMDocument $dom
    * @return array
    */
   public function parseEffectiveScore($dom) {
+    $semester = '学期学年';
     $scores = array(
       'thead' => array(
         '课程/环节', '学分', '类别', '课程类别', '考核方式', '修读性质',
@@ -45,7 +46,7 @@ class Kingo_GetScores extends Kingo_Functions {
   }
 
   /**
-   * @param DOMElement $dom
+   * @param DOMDocument $dom
    * @return array
    */
   public function parseOriginalScore($dom) {

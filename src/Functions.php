@@ -38,16 +38,21 @@ class Kingo_Functions {
   protected function htmlFinishing($html) {
     $html = str_replace('<br>', '', $html);
     $html = str_replace('&nbsp;', '', $html);
-    $html = '<meta charset="utf-8">' . $html;
+    $html = '
+      <meta
+        http-equiv="content-type"
+        content="text/html; charset=utf-8">' . $html;
     return $html;
   }
 
   /**
-   * @param DOMDocument $table
+   * @param DOMElement|DOMNode $table
    * @param array $range
    * @return array
    */
   protected function parseTable($table, $range=null) {
+    $array = array();
+
     foreach ($table->getElementsByTagName('tr') as $row => $tr) {
       if ($range) {
         foreach ($range as $i) {

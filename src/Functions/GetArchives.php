@@ -10,11 +10,13 @@ class Kingo_GetArchives extends Kingo_Functions {
   }
 
   /**
-   * @param DOMElement $table
+   * @param DOMNode $table
    * @return array
    */
   protected function parseArchives($table) {
-    if (count($table)) {
+    $archives = array();
+
+    if ($table) {
       foreach ($this->parseTable($table) as $row) {
         for ($i = 1; $i < count($row); $i += 2) {
           if ($row[$i]) {
