@@ -3,7 +3,7 @@
 /**
  * @param int $type
  */
-class Kingo_GetScores extends Kingo_Functions {
+class Kingo_Functions_GetScores extends Kingo_Functions {
   public function __invoke($args) {
     $dom = $this->DOM($this->kingo->POST('xscj/stu_myscore_rpt.aspx', array(
       'SJ'       => $args[0],

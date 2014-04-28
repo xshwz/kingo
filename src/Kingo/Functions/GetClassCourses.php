@@ -1,6 +1,6 @@
 <?php
 
-class Kingo_GetClassCourses extends Kingo_Functions {
+class Kingo_Functions_GetClassCourses extends Kingo_Functions {
   protected function getClassCode($className) {
     $classInfo = $this->kingo->GET('ZNPK/Private/List_XZBJ.aspx', array(
       'xnxq' => $this->kingo->xnxq,

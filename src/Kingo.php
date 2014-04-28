@@ -84,7 +84,7 @@ class Kingo {
    * methods dynamic binding
    */
   public function __call($method, $args) {
-    $functionName = 'Kingo_' . ucwords($method);
+    $functionName = 'Kingo_Functions_' . ucwords($method);
     $function = new $functionName($this);
 
     return $function($args);

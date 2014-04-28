@@ -19,6 +19,8 @@
     "phpunit/phpunit": "4.0.*"
   },
   "autoload": {
-    "classmap": ["src", "tests"]
+    "psr-0": {
+      "Kingo": "src"
+    }
   }
 }

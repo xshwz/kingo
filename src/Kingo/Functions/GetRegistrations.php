@@ -1,6 +1,6 @@
 <?php
 
-class Kingo_GetRegistrations extends Kingo_Functions {
+class Kingo_Functions_GetRegistrations extends Kingo_Functions {
   public function __invoke() {
     return array(
       'thead' => array(

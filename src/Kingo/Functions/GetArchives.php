@@ -1,6 +1,6 @@
 <?php
 
-class Kingo_GetArchives extends Kingo_Functions {
+class Kingo_Functions_GetArchives extends Kingo_Functions {
   public function __invoke() {
     return array_merge(
       $this->parseArchives($this->DOM($this->kingo->GET(

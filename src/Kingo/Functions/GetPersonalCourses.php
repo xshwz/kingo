@@ -1,6 +1,6 @@
 <?php
 
-class Kingo_GetPersonalCourses extends Kingo_Functions {
+class Kingo_Functions_GetPersonalCourses extends Kingo_Functions {
   public function __invoke() {
     $tables = $this->DOM(
       $this->kingo->POST('znpk/Pri_StuSel_rpt.aspx', array(
